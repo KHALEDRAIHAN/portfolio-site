@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Photography Works</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <strong>Khaled Md Raihan</strong>
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  <div class="nav-links" id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="works.html">Works</a>
+    <a href="corporate.html">Corporate</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<div class="container">
+  <h1>Photography Works</h1>
+  <p>A collection of live events, portraits, and moments.</p>
+
+  <div class="grid">
+    <img src="images/rahat.jpg">
+    <img src="images/tahsan.jpg">
+    <img src="images/chirkut.jpg">
+    <img src="images/artcell.jpg">
+    <img src="images/aftermath.jpg">
+  </div>
+</div>
+
+<footer>© Khaled Md Raihan</footer>
+
+<script>
+  function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("active");
+  }
+</script>
+
+</body>
+</html>

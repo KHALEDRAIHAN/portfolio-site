@@ -1,0 +1,234 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #0b0b0b;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* NAVBAR */
+nav {
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #222;
+  position: relative;
+  z-index: 100;
+}
+
+.nav-links {
+  display: flex;
+  gap: 18px;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* LAYOUT */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 50px 0;
+}
+
+.center {
+  text-align: center;
+}
+
+.hero img {
+  width: 100%;
+  border-radius: 14px;
+}
+
+h1, h2 {
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 34px;
+  margin-top: 25px;
+}
+
+h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+p {
+  color: #cfcfcf;
+  margin-top: 12px;
+  font-size: 15px;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.grid img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* CATEGORY CARDS */
+.category {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.category img {
+  width: 100%;
+  transition: transform 0.4s ease;
+}
+
+.category:hover img {
+  transform: scale(1.08);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.65);
+  color: white;
+  padding: 14px 0;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+/* BUTTONS */
+.btn-outline {
+  border:1px solid #fff;
+  padding:10px 18px;
+  margin-right:10px;
+  color: #fff;
+}
+
+.btn-filled {
+  background:#fff;
+  color:#000;
+  padding:10px 18px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 30px;
+  border-top: 1px solid #222;
+  font-size: 13px;
+  color: #777;
+}
+
+/* MOBILE MENU */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: #0b0b0b;
+    flex-direction: column;
+    border-top: 1px solid #222;
+  }
+
+  .nav-links a {
+    padding: 15px;
+    border-bottom: 1px solid #222;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  /* MOBILE: 3 categories per row */
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+
+  .category img {
+    height: 80px;
+    object-fit: cover;
+  }
+
+  .overlay {
+    font-size: 14px;
+    padding: 6px 0;
+  }
+
+  /* BRAND logos smaller on mobile */
+  .brands img {
+    height: 50px;
+    object-fit: contain;
+  }
+}
+
+/* VERY SMALL PHONES */
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .category img {
+    height: 70px;
+  }
+
+  .overlay {
+    font-size: 12px;
+  }
+
+  .brands img {
+    height: 40px;
+  }
+}
+
+/* BRANDS GRID */
+.brands {
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+  align-items: center;
+}
+.video-item {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* Ensure video height is consistent with mobile grid */
+@media (max-width: 768px) {
+  .video-item {
+    height: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .video-item {
+    height: 70px;
+  }
+}

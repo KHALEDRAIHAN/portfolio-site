@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portraits | Khaled Md Raihan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <strong>Khaled Md Raihan</strong>
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  <div class="nav-links" id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="works.html">Works</a>
+    <a href="concerts.html">Concert</a>
+    <a href="corporate.html">Corporate</a>
+    <a href="cinematography.html">Cinematography</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<div class="container">
+  <h1 class="center">Portraits</h1>
+  <div class="grid">
+    <img src="images/portrait1.jpg" alt="Portrait 1">
+    <img src="images/portrait2.jpg" alt="Portrait 2">
+    <img src="images/portrait3.jpg" alt="Portrait 3">
+    <img src="images/portrait4.jpg" alt="Portrait 4">
+  </div>
+</div>
+
+<footer>© Khaled Md Raihan</footer>
+
+<script>
+  function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("active");
+  }
+</script>
+
+</body>
+</html>

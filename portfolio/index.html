@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Khaled Md Raihan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <strong>Khaled Md Raihan</strong>
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  <div class="nav-links" id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="works.html">Works</a>
+    <a href="corporate.html">Corporate</a>
+    <a href="cinematography.html">Cinematography</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO SECTION -->
+<div class="hero container">
+  <img src="images/hero-collage.jpg" alt="Hero Collage">
+</div>
+
+<!-- CATEGORY BUTTONS -->
+<div class="container">
+  <h2 class="center">Explore My Work</h2>
+  <div class="grid">
+    <a href="concerts.html" class="category">
+      <img src="images/rahat.jpg" alt="Concerts">
+      <div class="overlay">Concert</div>
+    </a>
+    <a href="corporate.html" class="category">
+      <img src="images/corporate1.jpg" alt="Corporate">
+      <div class="overlay">Corporate</div>
+    </a>
+    <a href="portrait.html" class="category">
+      <img src="images/tahsan.jpg" alt="Portraits">
+      <div class="overlay">Portraits</div>
+    </a>
+    <a href="cinematography.html" class="category">
+      <img src="images/artcell.jpg" alt="Cinematography">
+      <div class="overlay">Cinematography</div>
+    </a>
+  </div>
+</div>
+
+<!-- FEATURED ARTISTS -->
+<div class="container">
+  <h2 class="center">Featured Highlights</h2>
+  <div class="grid">
+    <img src="images/rahat.jpg" alt="Rahat Fateh Ali Khan">
+    <img src="images/tahsan.jpg" alt="Tahsan">
+    <img src="images/minar.jpg" alt="Minar">
+    <img src="images/artcell.jpg" alt="Artcell">
+  </div>
+</div>
+
+<!-- BRANDS SECTION -->
+<div class="container">
+  <h2 class="center">Brands I Worked With</h2>
+  <div class="grid brands">
+    <img src="images/brand1.png" alt="Brand 1">
+    <img src="images/brand2.png" alt="Brand 2">
+    <img src="images/brand3.png" alt="Brand 3">
+    <img src="images/brand4.png" alt="Brand 4">
+  </div>
+</div>
+
+<!-- ABOUT SNAPSHOT + CTA -->
+<div class="container center">
+  <h2>Behind the Lens</h2>
+  <p>
+    I’m Khaled Md Raihan — a photographer and CSE student.
+    I capture people, moments, and environments with a balance of
+    creativity and technical precision.
+  </p>
+  <br>
+  <a href="about.html" class="btn-outline">About Me</a>
+  <a href="contact.html" class="btn-filled">Contact</a>
+</div>
+
+<!-- FOOTER -->
+<footer>© Khaled Md Raihan</footer>
+
+<!-- HAMBURGER SCRIPT -->
+<script>
+  function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("active");
+  }
+</script>
+
+</body>
+</html>

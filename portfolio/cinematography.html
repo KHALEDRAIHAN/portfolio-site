@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cinematography | Khaled Md Raihan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <strong>Khaled Md Raihan</strong>
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  <div class="nav-links" id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="works.html">Works</a>
+    <a href="concerts.html">Concert</a>
+    <a href="corporate.html">Corporate</a>
+    <a href="portrait.html">Portraits</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<div class="container">
+  <h1 class="center">Cinematography</h1>
+
+  <div class="grid">
+
+    <!-- Video 1 -->
+    <video controls class="video-item">
+      <source src="videos/BIOBUILDFAMILYDAY.mp4" type="video/mp4">
+      Your browser does not support HTML video.
+    </video>
+
+    <!-- Video 2 -->
+    <video controls class="video-item">
+      <source src="videos/cine2.mp4" type="video/mp4">
+      Your browser does not support HTML video.
+    </video>
+
+    <!-- Image 1 -->
+    <img src="images/cine3.jpg" alt="Cinematography 3">
+
+    <!-- Image 2 -->
+    <img src="images/cine4.jpg" alt="Cinematography 4">
+
+  </div>
+</div>
+
+<footer>© Khaled Md Raihan</footer>
+
+<script>
+  function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("active");
+  }
+</script>
+
+</body>
+</html>
